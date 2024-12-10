@@ -12,12 +12,11 @@ public class Main {
         //BUBBLE SORT
         int aux;
         for (int i = 0; i < vetor.length; i++) {
-            for (int j = i + 1; j < vetor.length; j++) {
-                if (vetor[i] > vetor[j]) {
-                    aux = vetor[i];
-                    vetor[i] = vetor[j];
-                    vetor[j] = aux;
-                    System.out.println();
+            for (int j = 0; j < vetor.length - 1 - i; j++) {
+                if (vetor[j] > vetor[j + 1]) {
+                    aux = vetor[j];
+                    vetor[j] = vetor[j + 1];
+                    vetor[j + 1] = aux;
                 }
             }
         }
