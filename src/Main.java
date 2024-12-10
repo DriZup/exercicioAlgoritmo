@@ -3,6 +3,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
 
+
         int[] vetor = new int[10];
 
         for (int i = 0; i < vetor.length; i++) {
@@ -23,6 +24,7 @@ public class Main {
         System.out.println("Vetor ordenado");
         for (int i = 0; i < vetor.length; i++) {
             System.out.println(vetor[i]);
+
         }
     }
 }
