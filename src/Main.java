@@ -1,22 +1,30 @@
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
-        int[] v = {7, 5, 10, 6, 8};
 
-        // Bubble sort
-        for (int i = 0; i < v.length - 1; i++) {
 
-            for (int j = 0; j < v.length - i - 1; j++) {
-                if (v[j] > v[j + 1]) {
-                    int temp = v[j];
-                    v[j] = v[j + 1];
-                    v[j + 1] = temp;
+        int[] vetor = new int[10];
+
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = (int) (Math.random() * vetor.length);
+            System.out.println(vetor[i]);
+        }
+        //BUBBLE SORT
+        int aux;
+        for (int i = 0; i < vetor.length; i++) {
+            for (int j = 0; j < vetor.length - 1 - i; j++) {
+                if (vetor[j] > vetor[j + 1]) {
+                    aux = vetor[j];
+                    vetor[j] = vetor[j + 1];
+                    vetor[j + 1] = aux;
                 }
             }
         }
+        System.out.println("Vetor ordenado");
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println(vetor[i]);
 
-        // Imprimir o array ordenado
-        for (int num : v) {
-            System.out.print(num + " ");
         }
     }
 }
