@@ -1,28 +1,36 @@
-import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int[] vetor = new int[10];
+        System.out.println("escolha o tamanho do array:");
+        int tam = scanner.nextInt();
+        int[] v = new int[tam];
 
-        for (int i = 0; i < vetor.length; i++) {
-            vetor[i] = (int) (Math.random() * vetor.length);
-            System.out.println(vetor[i]);
+        for (int i = 0; i < v.length; i++) {
+            v[i] = (int) (Math.random() * v.length);
+            System.out.print(v[i] + " ");
         }
-        //BUBBLE SORT
-        int aux;
-        for (int i = 0; i < vetor.length; i++) {
-            for (int j = 0; j < vetor.length - 1 - i; j++) {
-                if (vetor[j] > vetor[j + 1]) {
-                    aux = vetor[j];
-                    vetor[j] = vetor[j + 1];
-                    vetor[j + 1] = aux;
+        System.out.println();
+        bubbleSort(v);
+        System.out.println("Vetor ordenado");
+        for (int i = 0; i < v.length; i++) {
+            System.out.print(v[i] + " ");
+        }
+    }
+
+    public static void bubbleSort(int[] v) {
+        int n = v.length;
+
+        for (int i = 0; i < n - 1; i++)
+            for (int j = 0; j < n - i - 1; j++) {
+                if (v[j] > v[j + 1]) {
+                    // Troca os elementos fora de ordem
+                    int temp = v[j];
+                    v[j] = v[j + 1];
+                    v[j + 1] = temp;
                 }
             }
-        }
-        System.out.println("Vetor ordenado");
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.println(vetor[i]);
-        }
     }
 }
