@@ -6,21 +6,6 @@ Este documento detalha todos os passos e o funcionamento do código em Java que 
 ---
 
 
-#### *Implementação do Bubble Sort*
-java
-public static void bubbleSort(int[] v) {
-int n = v.length;
-
-    for (int i = 0; i < n - 1; i++)
-        for (int j = 0; j < n - i - 1; j++) {
-            if (v[j] > v[j + 1]) {
-                int temp = v[j];
-                v[j] = v[j + 1];
-                v[j + 1] = temp;
-            }
-        }
-
-
 *Como funciona o Bubble Sort?*
 1. Percorre o array várias vezes.
 2. Compara pares de elementos adjacentes:
@@ -30,7 +15,7 @@ int n = v.length;
 
 ---
 
-### *6. Exibição do Array Ordenado*
+### *Exibição do Array Ordenado*
 
 System.out.println("Vetor ordenado");
 for (int i = 0; i < v.length; i++) {
