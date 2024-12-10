@@ -1,9 +1,32 @@
 
-# Ordenação com Bubble Sort em Java
+#  Ordenação com Bubble Sort em Java
 
 Este documento detalha todos os passos e o funcionamento do código em Java que utiliza o algoritmo *Bubble Sort*. O programa permite ao usuário definir o tamanho de um array, preenche o array com números aleatórios, ordena-os e exibe o resultado.
 
 ---
+
+### *Entrada do Usuário*
+
+- O programa solicita ao usuário o tamanho do array.
+- Um array de inteiros (v) é criado com o tamanho especificado.
+
+---
+
+### *Preenchimento do Array com Números Aleatórios*
+
+- O array é preenchido com números aleatórios entre 0 e tam - 1.
+- O método Math.random() gera números decimais que são convertidos para inteiros.
+
+---
+
+### *Ordenação do Array com Bubble Sort*
+
+bubbleSort(v);
+
+- A função bubbleSort é chamada para ordenar o array.
+
+#### *Implementação do Bubble Sort*
+![img.png](img.png)
 
 
 *Como funciona o Bubble Sort?*
@@ -16,13 +39,8 @@ Este documento detalha todos os passos e o funcionamento do código em Java que 
 ---
 
 ### *Exibição do Array Ordenado*
-
-System.out.println("Vetor ordenado");
-for (int i = 0; i < v.length; i++) {
-System.out.print(v[i] + " ");
-}
-
-- Após a ordenação, o array ordenado é exibido no console.
+![img_1.png](img_1.png)
+- Após a ordenação, o array é exibido no console.
 
 ---
 
@@ -30,16 +48,17 @@ System.out.print(v[i] + " ");
 
 ### Entrada:
 
-Escolha o tamanho do array:\
-5
-
-Vetor aleatorio desordenado:
+Escolha o tamanho do Array:\
+5\
+Vetor aleatorio:
 4 2 3 1 0
+
 
 ### Saída:
 
 Vetor ordenado:
 0 1 2 3 4
+
 
 ---
 
