@@ -6,7 +6,7 @@ public class InsertionSort {
 
     public static void insertionSort(int[] array) {
         for (int i = 1; i < array.length; i++) {
-            int chave = array[i]; // Elemento a ser inserido
+            int chave = array[i];
             int j = i - 1;
 
             while (j >= 0 && array[j] > chave) {
