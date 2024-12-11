@@ -72,5 +72,24 @@ Vetor ordenado:
 
 ---
 
-## *Conclusão*
-Este código demonstra como implementar o algoritmo *Bubble Sort* em Java, sendo uma ótima introdução à lógica de ordenação e manipulação de arrays.
+#  Ordenação com Insertion Sort em Java
+
+O *Insertion Sort* (Ordenação por Inserção) é um algoritmo simples e eficiente para ordenar pequenos conjuntos de dados. Ele é baseado no conceito de construir gradualmente uma lista ordenada, elemento por elemento.
+
+## Como funciona
+
+O algoritmo percorre o array de elementos, comparando cada elemento atual (chamado de *chave*) com os elementos anteriores. Se a chave for menor que algum elemento anterior, esses elementos são movidos para frente, e a chave é inserida na posição correta.
+
+### Passos do Insertion Sort:
+1. Começa no segundo elemento do array (índice 1), pois considera que o primeiro elemento já está ordenado.
+2. Escolhe o elemento atual como *chave*.
+3. Compara a chave com os elementos à esquerda, movendo-os para a direita se forem maiores que a chave.
+4. Insere a chave na posição correta.
+5. Repete os passos acima para todos os elementos do array.
+
+### Complexidade do Algoritmo
+| Caso            | Complexidade |
+|------------------|--------------|
+| Melhor Caso     | O(n)         |
+| Caso Médio      | O(n²)        |
+| Pior Caso       | O(n²)        |
